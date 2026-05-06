@@ -1,6 +1,6 @@
 import { db, storage } from './firebase.js';
-import { collection, query, where, orderBy, limit, getDocs, addDoc, serverTimestamp, doc, updateDoc, arrayUnion, arrayRemove, startAfter, getDoc } from 'firebase/firestore';
-import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
+import { collection, query, where, orderBy, limit, getDocs, addDoc, serverTimestamp, doc, updateDoc, arrayUnion, arrayRemove, startAfter, getDoc } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
+import { ref, uploadBytes, getDownloadURL } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-storage.js";
 import { showToast, showLoading, escapeHTML, formatTimestamp, createSkeleton } from './ui.js';
 
 let currentUser = null;
