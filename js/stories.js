@@ -1,6 +1,6 @@
 import { db, storage } from './firebase.js';
-import { collection, query, where, addDoc, serverTimestamp, onSnapshot } from 'firebase/firestore';
-import { ref, uploadBytes, getDownloadURL } from 'firebase/storage';
+import { collection, query, where, addDoc, serverTimestamp, onSnapshot } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
+import { ref, uploadBytes, getDownloadURL } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-storage.js";
 import { showToast, showLoading } from './ui.js';
 
 let unsubscribe = null;
