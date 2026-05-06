@@ -1,5 +1,5 @@
 import { db } from './firebase.js';
-import { collection, query, where, getDocs, addDoc, serverTimestamp } from 'firebase/firestore';
+import { collection, query, where, getDocs, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
 import { showToast, showLoading, escapeHTML } from './ui.js';
 
 let currentUser = null;
