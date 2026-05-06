@@ -1,0 +1,12 @@
+src/
+├── index.html              # Main HTML structure
+├── js/
+│   ├── firebase.js        # Firebase config & exports
+│   ├── auth.js            # Authentication logic
+│   ├── ui.js              # Toast, spinner, DOM utils
+│   ├── communities.js     # Community management
+│   ├── posts.js           # Posts CRUD with pagination
+│   ├── friends.js         # Friend system
+│   ├── stories.js         # Stories (24h expiry)
+│   ├── reels.js           # Reels short videos
+│   └── main.js            # App initialization & orchestration
