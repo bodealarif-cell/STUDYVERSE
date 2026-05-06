@@ -7,18 +7,8 @@
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script type="importmap">
-        {
-            "imports": {
-                "firebase/app": "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js",
-                "firebase/auth": "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js",
-                "firebase/firestore": "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js",
-                "firebase/storage": "https://www.gstatic.com/firebasejs/10.8.0/firebase-storage.js",
-                "firebase/analytics": "https://www.gstatic.com/firebasejs/10.8.0/firebase-analytics.js"
-            }
-        }
-    </script>
     <style>
+        /* نفس الأنماط السابقة - احتفظ بها كما هي */
         body { font-family: 'Plus Jakarta Sans', 'IBM Plex Sans Arabic', sans-serif; background: radial-gradient(circle at 10% 20%, #0f172a, #1e1b4b); }
         .glass-edge { backdrop-filter: blur(16px); background: rgba(15, 23, 42, 0.55); border: 1px solid rgba(255,255,255,0.1); border-radius: 24px; }
         .sidebar-icon:hover .channel-name { max-width: 130px; opacity: 1; margin-right: 8px; }
@@ -40,6 +30,7 @@
 </head>
 <body class="text-white">
 
+<!-- Toast and Loading (نفس السابق) -->
 <div id="toastContainer" class="fixed top-4 left-4 z-50 space-y-2"></div>
 <div id="loadingOverlay" class="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 hidden items-center justify-center">
     <div class="text-center"><i class="fas fa-spinner fa-pulse fa-3x text-cyan-400"></i><p class="mt-2">جاري التحميل...</p></div>
@@ -64,7 +55,7 @@
     </div>
 </div>
 
-<!-- Main App -->
+<!-- Main App (نفس السابق) -->
 <div id="mainApp" class="hidden flex h-screen overflow-hidden">
     <aside class="w-24 bg-black/30 backdrop-blur-xl border-l border-white/10 flex flex-col items-center py-6 overflow-y-auto">
         <div class="text-center mb-4 text-xs font-bold text-cyan-400">مجتمعاتي</div>
