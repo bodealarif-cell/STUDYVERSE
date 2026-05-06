@@ -1,6 +1,6 @@
 import { auth, db } from './firebase.js';
-import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, onAuthStateChanged } from 'firebase/auth';
-import { doc, setDoc, getDoc, serverTimestamp } from 'firebase/firestore';
+import { createUserWithEmailAndPassword, signInWithEmailAndPassword, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
+import { doc, setDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
 import { showToast, showLoading } from './ui.js';
 
 export async function signup(email, password, name) {
@@ -33,8 +33,3 @@ export async function logout() {
 }
 
 export function onAuth(callback) { return onAuthStateChanged(auth, callback); }
-
-export async function getCurrentUserName(uid) {
-    const userDoc = await getDoc(doc(db, 'users', uid));
-    return userDoc.exists() ? userDoc.data().name : 'مستخدم';
-}
